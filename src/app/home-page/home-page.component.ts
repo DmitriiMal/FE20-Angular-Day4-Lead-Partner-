@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Iproducts } from '../IProducts';
+import { products } from '../products';
 
 @Component({
   selector: 'home-page',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit {
+  products: Iproducts[] = products;
+
   constructor() {}
   ngOnInit(): void {}
 }

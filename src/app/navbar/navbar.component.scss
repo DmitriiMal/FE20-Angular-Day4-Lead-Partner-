@@ -35,12 +35,12 @@ a:hover {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 1;
 
   // Glassmorphism
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  // border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .links {
@@ -54,7 +54,6 @@ a:hover {
 #nav h3 a,
 #nav a i {
   transition: all 0.2s ease-in-out;
-  // font-size: 1.6rem;
 }
 
 #nav a:hover {
@@ -64,4 +63,12 @@ a:hover {
 #nav a:hover i {
   transform: scale(1.3);
   color: #104b01;
+}
+
+#nav a h3 {
+  font-size: clamp(0.75rem, 0.4891rem + 1.3043vw, 1.5rem);
+}
+
+#nav a i {
+  font-size: 1.5rem;
 }
