@@ -17,6 +17,7 @@ a {
   padding: 0.5rem 1rem;
   margin: 4px;
   transition: all 0.2s ease-in-out;
+  font-size: 1.1rem;
 }
 
 a:hover {
@@ -30,9 +31,13 @@ a:hover {
   text-align: center;
   height: 70px;
   padding: 0 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 
   // Glassmorphism
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -46,11 +51,16 @@ a:hover {
   list-style: none;
 }
 
-i {
+#nav h3 a,
+#nav a i {
   transition: all 0.2s ease-in-out;
+  // font-size: 1.6rem;
 }
 
-i:hover {
+#nav a:hover {
   color: #104b01;
-  transform: scale(1.1);
+}
+
+#nav a:hover i {
+  transform: scale(1.3);
 }
