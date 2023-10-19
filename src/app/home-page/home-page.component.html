@@ -6,19 +6,17 @@
 </div>
 <main>
   <div class="cont">
-    <h1>Types of tea</h1>
+    <h1 class="mb-5">Shop</h1>
     <div
       class="row row-cols-xs-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3"
     >
-      <div *ngFor="let product of products; index as productId">
+      <div *ngFor="let product of products; index as i">
         <div class="card mt-3 my-card">
           <img src="{{ product.img }}" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">{{ product.name }}</h5>
-            <a
-              routerLink="products/{{ productId }}"
-              class="btn btn-outline-dark mt-2"
-              >Add to cart</a
+            <a routerLink="product/{{ i }}" class="btn btn-outline-dark mt-2"
+              >See more</a
             >
           </div>
         </div>

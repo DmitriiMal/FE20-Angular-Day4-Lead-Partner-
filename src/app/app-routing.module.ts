@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent,
+  },
+  {
+    path: 'product/:idFromLoop',
+    component: ProductDetailsComponent,
   },
 ];
 
